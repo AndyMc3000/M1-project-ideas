@@ -3,17 +3,245 @@
 body {
     font-family: "Nunito", sans-serif;
 }
+
+/* -------------------------- Containers --- */
+
+
 /* -------------------------- Bootstrap Navbar --- */
 
 .navbar {
-    margin-bottom: 0;
-    border: 0;
-    width: 100%;
-    background-color: #FCBF49;
+    background-color: #003049;
 }
 
-.nav-link {
-    font-family: "Nunito", sans-serif;
-    color: #EAE2B7;
-    font-size: 20px;
+.navbar button {
+    z-index: 1;
+    background-color: #d62828
 }
+
+.nav li a {
+    color: #eae2b7;
+    font-size: 20px;
+} 
+
+.nav li a:hover {
+    background-color: #d62828;
+}
+
+.dropdown-menu {
+    background-color: #d62828
+}
+
+.dropdown-item {
+    color: #003049;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #d62828;
+    color: #eae2b7;
+}
+
+/* -------------------------- Hero Image Container --- */
+
+.callout-container {
+    height: 75vh;
+    background: url('../images/modern-house1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* -------------------------- Jumotron --- */
+
+.jumbotron {
+    color: #eae2b7;
+    background-color: rgba(0,0,0,0.5);
+    font-family: "Nunito", sans-serif;
+    margin: 5px auto;
+}
+
+.callout {
+    width: 70%;
+    margin: 10px auto;
+    padding: 10px;
+    padding-bottom: 20px;
+    scroll-padding-bottom: 50px;
+    position: relative;
+    
+}
+
+.jumbotron .btn {
+    background-color: #eae2b7;
+    color: #003049;
+    font-size: 20px;
+    border-color: #eae2b7;
+}
+
+.jumbotron .btn:hover {
+    background-color: #d62828;
+    color: #eae2b7;
+    border-color: #d62828;
+}
+
+.jumbotron .btn:active {
+    background-color: #d62828;
+    color: #003049;
+    border-color: #d62828;
+}
+
+/* -------------------------- Footer --- */
+
+footer {
+    background-color: #003049;
+    color: #eae2b7;
+    min-height: 120px;
+    margin: 0;
+}
+
+.social-links {
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+.social-links li a i {
+    width: 45px;
+    height: 45px;
+    padding: 12px, 0;
+    border-radius: 50%;
+    margin-top: 2px;
+    Margin-left: 0px;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #003049;
+    background: #eae2b7;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background: #d62828;
+    color: #eae2b7;
+}
+
+#footer-details {
+    padding: 1px;
+}
+
+#footer-details h5 {
+    text-align: center;
+    margin-top: 35px;
+}
+
+#footer-details h4 {
+    text-align: center; 
+    margin-top: 20px;
+}
+
+.footer-callback {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.footer-callback button {
+    background-color: #eae2b7;
+    color: #003049;
+    font-size: 20px;
+    border-color: #eae2b7;
+}
+
+.footer-callback button:hover {
+    background-color: #d62828;
+    color: #eae2b7;
+    border-color: #d62828;
+}
+
+.footer-callback button:active {
+    background-color: #d62828;
+    color: #003049;
+    border-color: #d62828;
+}
+
+address {
+    text-align: center;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.developer p {
+    text-align: center;
+    margin: 0;
+}
+
+.disclaimer {
+    text-align: center;
+    margin: 10;
+}
+
+.disclaimer hr {
+    background-color: #eae2b7
+}
+
+.developer hr {
+    background-color: #eae2b7
+}
+
+/* -------------------------- Media Queries --- */
+
+@media (min-width: 435px) {
+
+    .callout {
+        width: 98%;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+
+    .callout-container {
+        height: 98vh;
+    }
+}
+
+@media (min-width: 576px) {
+
+    .callout {
+        width: 92%;
+        margin: 1px;
+        scroll-padding-bottom: 25px;
+    }
+
+    .callout-container {
+        height: 95vh;
+    }
+}
+
+@media (max-width: 950px) {
+
+    .callout {
+        width: 85%;
+        margin: 1px auto;
+        padding: 5px;
+        scroll-padding-bottom: 25px;
+    }
+}
+
+@media (min-width: 1300px) {
+
+    .callout {
+        width: 85%;
+        margin: 1px auto;
+        padding: 5px;
+        scroll-padding-bottom: 25px;
+    }
+}
+
+
+
+
