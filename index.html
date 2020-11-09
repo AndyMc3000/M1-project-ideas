@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/db71b18eb7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css" integrity="sha512-csw0Ma4oXCAgd/d4nTcpoEoz4nYvvnk21a8VA2h2dzhPAvjbUIK6V3si7/g/HehwdunqqW18RwCJKpD7rL67Xg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rennov8 - Home</title>
@@ -15,147 +15,226 @@
 
 <!------------------------------------- Modal -->
 
-<div class="modal fade" id="CallbackModal" tabindex="-1" role="dialog" aria-labelledby="CallbackModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="CallbackModalLabel">Request a Callback</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        hello world
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+    <div class="modal fade" id="CallbackModal" tabindex="-1" role="dialog" aria-labelledby="CallbackModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <h3 class="modal-title" id="CallbackModalLabel"><img src="assets/images/logo-light-wide.png" alt="Logo"></h3>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <h4>Let's Talk!</h4>
+            <h5>Complete the form below, and we will contact you at a convenient time to discuss your prjoect.</h5>
+            <form>
+            <input type="text"><input type="submit" value="Submit">
+            <hr>
+            <label for="cars">Choose a car:</label>
+                <select id="cars" name="cars">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="fiat">Fiat</option>
+                <option value="audi">Audi</option>
+                </select>
+            </form>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+        </div>
     </div>
-  </div>
-</div>
+    </div>
 
-<!------------------------------------- Navbar -->
+    <!------------------------------------- Navbar -->
 
-<nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="index.html">
-        <img src="assets/images/logo-light-wide.png" alt="">
-    </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="nav nav-pills ml-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Services
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="services.html">Residential</a>
-                    <a class="dropdown-item" href="services.html">Commercial</a>
-                    <a class="dropdown-item" href="services.html">Interior Design</a>
-                    <a class="dropdown-item" href="services.html">Planning Applications</a>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+            <img src="assets/images/logo-light-wide.png" alt="">
+        </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-pills ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="services.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="services.html">Residential</a>
+                        <a class="dropdown-item" href="services.html">Commercial</a>
+                        <a class="dropdown-item" href="services.html">Interior Design</a>
+                        <a class="dropdown-item" href="services.html">New Builds</a>
+                        <a class="dropdown-item" href="services.html">Structural Engineering</a>
+                        <a class="dropdown-item" href="services.html">Trade Services</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        About
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about.html">Who We Are</a>
+                        <a class="dropdown-item" href="ourwork.html">Our Work</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="signin.html"><i class="far fa-user-circle"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>   
+        <div class="container-fluid callout-container">
+            <div class="row">
+                <div class="col-12">
+                    <section class="callout jumbotron text-center">
+                        <h1 class="display-4"><em> building</em> <strong>Dreams</strong>.</h1> 
+                        <h1 class="display-4"><em>growing</em> <strong>Investments</strong>.</h1>
+                        <hr class="block-divider block-divider--orange">
+                        <p class="lead">
+                            This is a simple hero unit,on. It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                        <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#CallbackModal">Let's Talk</button>
+                        <a class="btn btn-lg" href="services.html" role="button">Learn more</a>
+                    </section>
                 </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+            </div>
+        </div>
+    </section>
 
-<section>   
-    <div class="container-fluid callout-container">
+    <section> 
+        <div class="container-fluid what-we-do-container">
+            <div class="row">
+                <div class="col-12 section-heading">
+                    <h2>What We Do</h2>
+                    <hr class="block-divider block-divider--red">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-lg-4 inline-block what-we-do-section">
+                    <h5 class="hvr-icon-bounce"><i class="fa fa-tasks hvr-icon d-none d-sm-block"></i>CONSULT</h5>
+                    <br>
+                    <p class="">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="col-12 col-lg-4 inline-block what-we-do-section">
+                    <h5 class="hvr-icon-bounce"><i class="fa fa-pencil-ruler hvr-icon d-none d-sm-block"></i>DESIGN</h5>
+                    <br>
+                    <p class="">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+                <div class="col-12 col-lg-4 inlne-block what-we-do-section">
+                    <h5 class="hvr-icon-bounce"><i class="fa fa-handshake hvr-icon d-none d-sm-block"></i>DELIVER</h5>
+                    <br>
+                    <p class="">Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <article>
+        <div class="container-fluid thewhy">
+            <div class="row">
+                <div class="col-12 section-heading text-center">
+                <h2>Testimonials</h2>
+                <hr class="block-divider block-divider--orange">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 inline-block thewhy-section">
+                    <hr class="block-divider block-divider--red">
+                    <h4>"Then: Two column row, background color - the what - with picture background, 2 tiles, 2 titles, 2 colums with paragraphs"</h4>
+                    <hr class="block-divider block-divider--red">
+                    <h5>Sarah-Jane Murphy - Domestic Goddess</h5>
+                </div>
+                <div class="col-12 d-none d-md-block col-md-6 col-lg-4 inline-block thewhy-section">
+                    <hr class="block-divider block-divider--red">
+                    <h4>"Then: Two column row, background color - the what - with picture background, 2 tiles, 2 titles, 2 colums with paragraphs"</h4>
+                    <hr class="block-divider block-divider--red">                    
+                    <h5>John Ryan - CEO, CloudConnect LLC</h5>
+                </div>
+            </div>
+        </div>    
+    </article>
+
+    <section>
         <div class="row">
             <div class="col-12">
-                <section class="callout jumbotron text-center">
-                    <h1 class="display-4"><em> building</em> <strong>Dreams</strong>. 
-                    <h1 class="display-4"><em>growing</em> <strong>Investments</strong>.</h1>
-                    <p class="lead">
-                        This is a simple hero unit,on. It uses utility classes for typography and spacing to space content out within the larger container.</p>
-                    <button type="button" class="btn btn-lg" data-toggle="modal" data-target="#CallbackModal">Let's Talk</button>
-                    <a class="btn btn-lg" href="services.html" role="button">Learn more</a>
-                </section>
+                <h5>Then: One row - the dream/the how - next steps</h5> 
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section> 
-    <h1>Next: Four column row - Why Us?/introduction - 4 icons, titles, paragraphs</h1>
-    <h2>Then: Two column row, background color - the what - with picture background, 2 tiles, 2 titles, 2 colums with paragraphs</h2>
-    <h2>Then: One row - the dream/the how - next steps</h2> 
-</section>    
-
-<footer class="container-fluid">
-        <div id="footer-details" class="row">
-            <div class="col-sm-4 footer-callback">
-                <h4 class="uppercase">Request a Callback</h4>
-                    <p class="inline-block">
-                        Click the button below and we will call you back at a convenient time, to discuss your requirements and arrange a free no-oblgation onsite consultation.
-                    </p>
-                    <button type="button" class="btn" data-toggle="modal" data-target="#CallbackModal">Let's Talk</button>
+    <footer class="container-fluid">
+            <div id="footer-details" class="row">
+                <div class="col-sm-4 footer-callback">
+                    <h4 class="uppercase">Request a Callback</h4>
+                        <p class="inline-block">
+                            Click the button below and we will call you back at a convenient time, to discuss your requirements and arrange a free no-oblgation onsite consultation.
+                        </p>
+                        <button type="button" class="btn" data-toggle="modal" data-target="#CallbackModal">Let's Talk</button>
+                </div>
+                <div class="col-sm-4">
+                    <h5 class="uppercase">Connect With Us!</h5>
+                    <ul class="list-inline social-links">
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                                <span class="sr-only">Twitter</span>
+                            </a>
+                        </li>                
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i>
+                                <span class="sr-only">LinkedIn</span>
+                            </a>
+                        </li>              
+                        <li class="list-inline-item">
+                            <a href="#" target="_blank">
+                                <i class="fa fa-youtube" aria-hidden="true"></i>
+                                <span class="sr-only">YouTube</span>
+                            </a>
+                        </li>   
+                    </ul>     
+                </div>  
+                <div class="col-sm-4">
+                    <h4 class="uppercase general-sub">Rennov8 Ltd.</h4>
+                        <address>
+                        Easy Street<br>
+                        Ballygoforwards<br>
+                        Co. Kerry<br>
+                        <a href="tel:+353-029-555-2121">Tel: +353 (0) 29-555-2121</a><br>
+                        Email: <a href="mailto:info@rennov8.build">info@rennov8.build</a>
+                        </address>
+                </div>      
             </div>
-            <div class="col-sm-4">
-                <h5 class="uppercase">Connect With Us!</h5>
-                <ul class="list-inline social-links">
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fa fa-facebook" aria-hidden="true"></i>
-                            <span class="sr-only">Facebook</span>
-                        </a>
-                    </li>
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fa fa-twitter" aria-hidden="true"></i>
-                            <span class="sr-only">Twitter</span>
-                        </a>
-                    </li>                
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fa fa-linkedin" aria-hidden="true"></i>
-                            <span class="sr-only">LinkedIn</span>
-                        </a>
-                    </li>              
-                    <li class="list-inline-item">
-                        <a href="#" target="_blank">
-                            <i class="fa fa-youtube" aria-hidden="true"></i>
-                            <span class="sr-only">YouTube</span>
-                        </a>
-                    </li>   
-                </ul>     
-            </div>  
-            <div class="col-sm-4">
-                <h4 class="uppercase general-sub">Rennov8 Ltd.</h4>
-                    <address>
-                    Easy Street<br>
-                    Ballygoforwards<br>
-                    Co. Kerry<br>
-                    Tel: 0298-555212<br>
-                    Email: <a href="mailto:info@rennov8.build">info@rennov8.build</a>
-                    </address>
-            </div>      
+        <div id="legal" class="row">
+            <div class="col-sm-10 disclaimer">
+                <hr>
+                <p>
+                    Disclaimer: Rennov8 Ltd. (including any associated companies) while it takes every care and precaution to ensure that the information contained within the Website is accurate, it provides no guarantees, warranties, representations of any kind (either express or implied) as to the accuracy, timeliness, completeness and/or availability of this information (which it may amend at any time without any notice) and accepts no liability (in tort, negligence, contract, statute or otherwise) for any losses, damages, injury, liabilities, claims and expenses (including but not limited to legal, defence or settlement costs) of any kind, whether direct, indirect or consequential including any third party claims) that may arise out of or result from the access to, or inability to access the Website. 
+                </p>
+            </div>
+            <div class="col-sm-2 developer">
+                <hr>
+                <p>
+                    <img src="assets/images/mcapp-small.png" alt="McApp Software Logo">
+                </p>
+            </div> 
         </div>
-    <div id="legal" class="row">
-        <div class="col-sm-10 disclaimer">
-            <hr>
-            <p>
-                Disclaimer: Rennov8 Ltd. (including any associated companies) while it takes every care and precaution to ensure that the information contained within the Website is accurate, it provides no guarantees, warranties, representations of any kind (either express or implied) as to the accuracy, timeliness, completeness and/or availability of this information (which it may amend at any time without any notice) and accepts no liability (in tort, negligence, contract, statute or otherwise) for any losses, damages, injury, liabilities, claims and expenses (including but not limited to legal, defence or settlement costs) of any kind, whether direct, indirect or consequential including any third party claims) that may arise out of or result from the access to, or inability to access the Website. 
-            </p>
-        </div>
-        <div class="col-sm-2 developer">
-            <hr>
-            <p>
-                <img src="assets/images/mcapp-small.png" alt="McApp Software Logo">
-            </p>
-        </div> 
-</footer>
+    </footer>
 
 </body>
 

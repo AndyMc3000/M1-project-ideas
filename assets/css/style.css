@@ -1,49 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap');
+
 
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: "Source+Sans+Pro", sans-serif;
 }
 
-/* -------------------------- Containers --- */
+/* -------------------------- Modal --- */
 
-
-/* -------------------------- Bootstrap Navbar --- */
-
-.navbar {
+.modal-header {
+    text-align: center;
     background-color: #003049;
 }
 
-.navbar button {
-    z-index: 1;
-    background-color: #d62828
-}
-
-.nav li a {
+.close  {
     color: #eae2b7;
-    font-size: 20px;
-} 
-
-.nav li a:hover {
-    background-color: #d62828;
+    font-size: 40px;
 }
 
-.dropdown-menu {
-    background-color: #d62828
-}
-
-.dropdown-item {
-    color: #003049;
-}
-
-.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    background-color: #d62828;
-    color: #eae2b7;
-}
-
-/* -------------------------- Hero Image Container --- */
+/* -------------------------- Containers, Dividers, Headings --- */
 
 .callout-container {
-    height: 75vh;
+    height: 50vh;
     background: url('../images/modern-house1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -53,25 +30,156 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
+    padding: 0;
+}
+
+.what-we-do-container {
+    color: #eae2b7;
+    text-align: center;
+    background-color: #003049;
+}
+
+.section-heading {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.block-divider {
+    width: 195px;
+    height: 3px;
+    border: 0;
+    background-color: #444
+}
+
+.block-divider--orange {
+    background-color: #f77f00;
+}
+
+.block-divider--red {
+    background-color: #d62828;
+    margin: 50 auto;
+}
+
+.what-we-do-section i {
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+
+.hvr-sweep-to-bottom:hover {
+    background-color: #d62828
+}
+
+.hvr-sweep-to-bottom:before {
+    background-color: #d62828;
+}
+
+.thewhy {
+    height: 60vh;
+    background: url('../images/modern-office-sea.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.thewhy-section {
+    background-color: rgba(247,127,0,0.85);
+    color: #003049;
+    margin: 10px auto;
+    display: inline-block;
+    width: 90px;
+    font-style: italic;
+}
+
+.thewhy-section h4 {
+    width: 80%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+.thewhy-section h2 {
+    color: #003049;
+    text-align: center;
+}
+/* -------------------------- Bootstrap Navbar --- */
+
+.navbar {
+    background-color: #003049;
+    height: 140%x;
+}
+
+.navbar button {
+    z-index: 1;
+    background-color: #d62828;
+    box-shadow: 0 0 0 0.1rem rgba(247, 127, 0,.65);
+}
+
+.nav li a {
+    color: #eae2b7;
+    font-size: 20px;
+} 
+
+.nav li a:hover {
+    background-color: #d62828;
+    box-shadow: 0 0 0 0.1rem rgba(247, 127, 0,.65);
+}
+
+.dropdown-menu {
+    background-color: #d62828
+}
+
+.dropdown-item {
+    color: #eae2b7;
+    font-weight: 100;
+    font-size: 18px;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: #d62828;
+    color: #eae2b7;
+}
+
+.nav li a i {
+    font-size: 28px;
+    color: #f77f00
 }
 
 /* -------------------------- Jumotron --- */
 
 .jumbotron {
     color: #eae2b7;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.6);
     font-family: "Nunito", sans-serif;
-    margin: 5px auto;
+    margin: 0 auto;
+    position: relative;
+    left: 0px;
+    right: 0px;
+    bottom: 60px;
+}
+
+.jumbotron button {
+    margin-bottom: 25px;
+    margin-right: 5px;
+}
+
+.jumbotron .btn {
+    margin-bottom: 25px;
+    margin-right: 5px;
+}
+
+.display-4 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0px;
 }
 
 .callout {
     width: 70%;
-    margin: 10px auto;
+    margin-top: 25%;
     padding: 10px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
     scroll-padding-bottom: 50px;
-    position: relative;
-    
 }
 
 .jumbotron .btn {
@@ -85,12 +193,17 @@ body {
     background-color: #d62828;
     color: #eae2b7;
     border-color: #d62828;
+    box-shadow: 0 0 0 0.3rem rgba(247, 127, 0,.65);
 }
 
 .jumbotron .btn:active {
     background-color: #d62828;
     color: #003049;
     border-color: #d62828;
+}
+
+.btn.focus, .btn:focus {
+    box-shadow: 0 0 0 0.3rem rgba(247, 127, 0,.25);
 }
 
 /* -------------------------- Footer --- */
@@ -187,21 +300,27 @@ address {
 }
 
 .disclaimer hr {
-    background-color: #eae2b7
+    background-color: #d62828;
+    height: 2.5px;
+    margin: 4px;
 }
 
 .developer hr {
-    background-color: #eae2b7
+    background-color: #d62828;
+    height: 2.5px;
+    margin: 4px;
 }
+
+
 
 /* -------------------------- Media Queries --- */
 
-@media (min-width: 435px) {
+@media (min-width: 370px) {
 
     .callout {
         width: 98%;
-        margin: 0;
-        padding-bottom: 20px;
+        margin: 2px auto;
+        padding: 0;
     }
 
     .callout-container {
@@ -213,7 +332,7 @@ address {
 
     .callout {
         width: 92%;
-        margin: 1px;
+        margin: 4px auto;
         scroll-padding-bottom: 25px;
     }
 
@@ -222,7 +341,7 @@ address {
     }
 }
 
-@media (max-width: 950px) {
+@media (min-width: 950px) {
 
     .callout {
         width: 85%;
@@ -242,6 +361,362 @@ address {
     }
 }
 
+/* -------------------------- Gallery --- */
+
+.thumb {
+    display: inline;
+    max-height: 200px;
+}
+#thumblist {
+    text-align: center;
+    border-radius: 8px;
+    padding: 0;
+    background: rgba(127,127,127,.8);
+}
+#thumblist img {
+    border-radius: 8px;
+}
+.description {
+      color: white;
+      text-decoration: none;
+}
+
+.lightbox {
+    display: none; /**sets the default display to hide the lightbox until it's the :target**/
+    position: fixed; /**the rest of this styling makes the lightbox full screen when selected**/
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,.8);
+}
+.lightbox img { /**sets the styling of the image in the lightbox**/
+    max-width: 80%;
+    max-height: 90%;
+    text-align: center;
+    margin-top: 2%;
+}
+.lightbox:target { /**this is where the magic happens. makes the lightbox display when it's the target of a clickable link**/
+    outline: none;
+    display: block;
+}
+.previous { /**styling the left arrow**/
+    position: fixed;
+    left: 4px;
+    top: 40%;
+    width: 40px;
+}
+.exit { /**styling the exit button**/
+    position: fixed;
+    top: 4px;
+    right: 4px;
+    width: 40px;
+}
+.next { /**styling the right arrow**/
+    position: fixed;
+    right: 4px;
+    top: 40%;
+    width: 40px;
+}
+
+/* -------------------------- Team --- */
+
+#team {
+    background: #eee !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #108d6f;
+    border-color: #108d6f;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007b5e;
+    border-color: #007b5e;
+}
+
+.team-section {
+    padding: 60px 0;
+}
+
+.team-section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#team .card {
+    border: none;
+    background: #ffffff;
+}
+
+.image-flip:hover .backside,
+.image-flip.hover .backside {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.image-flip:hover .frontside,
+.image-flip.hover .frontside {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.mainflip {
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -moz-transition: 1s;
+    -moz-transform: perspective(1000px);
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.frontside {
+    position: relative;
+    -webkit-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    z-index: 2;
+    margin-bottom: 30px;
+}
+
+.backside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+    -webkit-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    -moz-box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+    box-shadow: 5px 7px 9px -4px rgb(158, 158, 158);
+}
+
+.frontside,
+.backside {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transition: 1s;
+    -moz-transform-style: preserve-3d;
+    -o-transition: 1s;
+    -o-transform-style: preserve-3d;
+    -ms-transition: 1s;
+    -ms-transform-style: preserve-3d;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.frontside .card,
+.backside .card {
+    min-height: 312px;
+}
+
+.backside .card a {
+    font-size: 18px;
+    color: #007b5e !important;
+}
+
+.frontside .card .card-title,
+.backside .card .card-title {
+    color: #007b5e !important;
+}
+
+.frontside .card .card-body img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+/* -------------------------- Map --- */
+
+#contatti{
+  background-color: #70c3be;
+  letter-spacing: 2px;
+  }
+#contatti a{
+  color: #fff;
+  text-decoration: none;
+}
 
 
+@media (max-width: 575.98px) {
 
+  #contatti{padding-bottom: 800px;}
+  #contatti .maps iframe{
+    width: 100%;
+    height: 450px;
+  }
+ }
+
+
+@media (min-width: 576px) {
+
+   #contatti{padding-bottom: 800px;}
+
+   #contatti .maps iframe{
+     width: 100%;
+     height: 450px;
+   }
+ }
+
+@media (min-width: 768px) {
+
+  #contatti{padding-bottom: 350px;}
+
+  #contatti .maps iframe{
+    width: 100%;
+    height: 850px;
+  }
+}
+
+@media (min-width: 992px) {
+  #contatti{padding-bottom: 200px;}
+
+   #contatti .maps iframe{
+     width: 100%;
+     height: 700px;
+   }
+}
+
+/*------------------------------------- Services cards -- copyright: Bootsnipp: Snippet by dkstudio  --*/
+
+.services-section {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    background-color: #f1f4fa;
+}
+.wrap {
+    display: flex;
+    background: white;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 7px 7px 30px -5px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.wrap:hover {
+    background: linear-gradient(135deg,#6394ff 0%,#0a193b 100%);
+    color: white;
+}
+
+.ico-wrap {
+    margin: auto;
+}
+
+.mbr-iconfont {
+    font-size: 4.5rem !important;
+    color: #313131;
+    margin: 1rem;
+    padding-right: 1rem;
+}
+
+.vcenter {
+    margin: auto;
+}
+
+.mbr-section-title3 {
+    text-align: left;
+}
+
+h2 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.display-5 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1.4rem;
+}
+
+.mbr-bold {
+    font-weight: 700;
+}
+
+p {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 25px;
+}
+
+.display-6 {
+    font-family: 'Source Sans Pro',sans-serif;
+    font-size: 1rem;
+}
+
+/******************* Timeline Demo - 4 - Bootsnipp - Siddharth Panchal *****************/
+.main-timeline4{overflow:hidden;position:relative}
+.main-timeline4:before{content:"";width:5px;height:70%;background:#333;position:absolute;top:70px;left:50%;transform:translateX(-50%)}
+.main-timeline4 .timeline-content:before,.main-timeline4 .timeline:before{top:50%;transform:translateY(-50%);content:""}
+.main-timeline4 .timeline{width:50%;padding-left:100px;float:right;position:relative}
+.main-timeline4 .timeline:before{width:20px;height:20px;border-radius:50%;background:#fff;border:5px solid #333;position:absolute;left:-10px}
+.main-timeline4 .timeline-content{display:block;padding-left:150px;position:relative}
+.main-timeline4 .timeline-content:before{width:90px;height:10px;border-top:7px dotted #333;position:absolute;left:-92px}
+.main-timeline4 .year{display:inline-block;width:120px;height:120px;line-height:100px;border-radius:50%;border:10px solid #f54957;font-size:30px;color:#f54957;text-align:center;box-shadow:inset 0 0 10px rgba(0,0,0,.4);position:absolute;top:0;left:0}
+.main-timeline4 .year:before{content:"";border-left:20px solid #f54957;border-top:10px solid transparent;border-bottom:10px solid transparent;position:absolute;bottom:-13px;right:0;transform:rotate(45deg)}
+.main-timeline4 .inner-content{padding:20px 0}
+.main-timeline4 .title{font-size:24px;font-weight:600;color:#f54957;text-transform:uppercase;margin:0 0 5px}
+.main-timeline4 .description{font-size:14px;color:#6f6f6f;margin:0 0 5px}
+.main-timeline4 .timeline:nth-child(2n){padding:0 100px 0 0}
+.main-timeline4 .timeline:nth-child(2n) .timeline-content:before,.main-timeline4 .timeline:nth-child(2n) .year,.main-timeline4 .timeline:nth-child(2n):before{left:auto;right:-10px}
+.main-timeline4 .timeline:nth-child(2n) .timeline-content{padding:0 150px 0 0}
+.main-timeline4 .timeline:nth-child(2n) .timeline-content:before{right:-92px}
+.main-timeline4 .timeline:nth-child(2n) .year{right:0}
+.main-timeline4 .timeline:nth-child(2n) .year:before{right:auto;left:0;border-left:none;border-right:20px solid #f54957;transform:rotate(-45deg)}
+.main-timeline4 .timeline:nth-child(2){margin-top:110px}
+.main-timeline4 .timeline:nth-child(odd){margin:-110px 0 0}
+.main-timeline4 .timeline:nth-child(even){margin-bottom:80px}
+.main-timeline4 .timeline:first-child,.main-timeline4 .timeline:last-child:nth-child(even){margin:0}
+.main-timeline4 .timeline:nth-child(2n) .year{border-color:#1ebad0;color:#1ebad0}
+.main-timeline4 .timeline:nth-child(2) .year:before{border-right-color:#1ebad0}
+.main-timeline4 .timeline:nth-child(2n) .title{color:#1ebad0}
+.main-timeline4 .timeline:nth-child(3n) .year{border-color:#7cba01;color:#7cba01}
+.main-timeline4 .timeline:nth-child(3) .year:before{border-left-color:#7cba01}
+.main-timeline4 .timeline:nth-child(3n) .title{color:#7cba01}
+.main-timeline4 .timeline:nth-child(4n) .year{border-color:#f8781f;color:#f8781f}
+.main-timeline4 .timeline:nth-child(4) .year:before{border-right-color:#f8781f}
+.main-timeline4 .timeline:nth-child(4n) .title{color:#f8781f}
+@media only screen and (max-width:1200px){.main-timeline4 .year{top:50%;transform:translateY(-50%)}
+}
+@media only screen and (max-width:990px){.main-timeline4 .timeline{padding-left:75px}
+.main-timeline4 .timeline:nth-child(2n){padding:0 75px 0 0}
+.main-timeline4 .timeline-content{padding-left:130px}
+.main-timeline4 .timeline:nth-child(2n) .timeline-content{padding:0 130px 0 0}
+.main-timeline4 .timeline-content:before{width:68px;left:-68px}
+.main-timeline4 .timeline:nth-child(2n) .timeline-content:before{right:-68px}
+}
+@media only screen and (max-width:767px){.main-timeline4{overflow:visible}
+.main-timeline4:before{height:100%;top:0;left:0;transform:translateX(0)}
+.main-timeline4 .timeline:before,.main-timeline4 .timeline:nth-child(2n):before{top:60px;left:-9px;transform:translateX(0)}
+.main-timeline4 .timeline,.main-timeline4 .timeline:nth-child(even),.main-timeline4 .timeline:nth-child(odd){width:100%;float:none;text-align:center;padding:0;margin:0 0 10px}
+.main-timeline4 .timeline-content,.main-timeline4 .timeline:nth-child(2n) .timeline-content{padding:0}
+.main-timeline4 .timeline-content:before,.main-timeline4 .timeline:nth-child(2n) .timeline-content:before{display:none}
+.main-timeline4 .timeline:nth-child(2n) .year,.main-timeline4 .year{position:relative;transform:translateY(0)}
+.main-timeline4 .timeline:nth-child(2n) .year:before,.main-timeline4 .year:before{border:none;border-right:20px solid #f54957;border-top:10px solid transparent;border-bottom:10px solid transparent;top:50%;left:-23px;bottom:auto;right:auto;transform:rotate(0)}
+.main-timeline4 .timeline:nth-child(2n) .year:before{border-right-color:#1ebad0}
+.main-timeline4 .timeline:nth-child(3n) .year:before{border-right-color:#7cba01}
+.main-timeline4 .timeline:nth-child(4n) .year:before{border-right-color:#f8781f}
+.main-timeline4 .inner-content{padding:10px}
+}
