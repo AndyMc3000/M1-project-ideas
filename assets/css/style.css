@@ -666,6 +666,17 @@ p {
     font-size: 1rem;
 }
 
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+    float: left;
+    width: 100%;
+    max-width: 100%;  
+    }  
+
+    .carousel-multi-item-2 .card img {
+    border-radius: 2px; 
+    }
+}
 /******************* Timeline Demo - 4 - Bootsnipp - Siddharth Panchal *****************/
 .main-timeline4{overflow:hidden;position:relative}
 .main-timeline4:before{content:"";width:5px;height:70%;background:#333;position:absolute;top:70px;left:50%;transform:translateX(-50%)}
